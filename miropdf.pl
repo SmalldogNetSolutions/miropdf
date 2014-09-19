@@ -114,6 +114,75 @@ my $jdata = {
 			#height => 144, # if just height provided, scale width
 			width => 144, # if just width provided, scale height
 		},
+		{
+			# tables 
+			object_type => 'table',
+			item_display => 'div', # by default tables are divs, if item_display is 
+				# span then stuff would float to the right of the table (this might be really hard
+				# do dont spend much time on this yet)
+			content => {
+				table => {
+					title => 'Activity Detail',
+					width => '100%', # required, either percent or points (i.e. 72 points = 1 inch)
+					thead => {
+						show => 1, # show the column headers, pulled from column detail below
+						font => 'Helvetica', # or default to engine/page
+						font_size => 12, # or default
+						color => '#000', # or default
+						background_color => '#fff', # or default
+					},
+					tbody => {
+						font => 'Helvetica', # or default to engine/page
+						font_size => 12, # or default
+						color => '#000', # or default
+						background_color => '#fff', # or default
+					},
+					columns => [
+						# the order of the columns determins how they should be displayed
+						# required fields are k and width (percent of total table width)
+						{ k => 'post_date', name => 'Date', width => '10%', },
+						{ k => 'account_name', name => 'Account', width => '20%', },
+						{ k => 'description', name => 'Description', width => '60%', },
+						# column options are align, font, font_size, color, background_color to 
+						# override thead defaults
+						{ k => 'amount', name => 'Amount', align => 'right', width => '10%', },
+						],
+					},
+				data => [
+					# these are the table data rows
+					{ 	
+						amount => '100.00',
+						post_date => '2014-01-01 ',
+						accont_name => 'Contributions',
+						description => 'Check-Bowels Household',
+						# _opts are where we can override tbody settings in table above
+						# for the entire row or a single key
+						_opts => {
+							_all => { # means all rows
+								font => 'Helvetica', 
+								font_size => 12, 
+								color => '#000', 
+								background_color => '#fff',
+							},
+							amount => { # apply after any _all stuff
+								font_size => 24, 
+							},
+						},
+					},
+					{ 	
+						amount => '-1,200.00',
+						accont_name => 'Distributions',
+						post_date => '2014-01-01 ',
+						description => 'Community Resource Center Grant Distributon',
+					},
+					# some rows might not have all the keys
+					{ 	
+						amount => '-1,200.00',
+						description => 'Community Resource Center Grant Distributon',
+					},
+					],
+				},
+		},
 		],
 };
 
