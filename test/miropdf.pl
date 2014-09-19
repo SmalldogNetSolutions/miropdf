@@ -107,7 +107,7 @@ my $jdata = {
 			content => {
 				# either a local file path or a url is required
 				#path => "/tmp/smalldog_logo.png",
-				url => "https://smalldognetstatic.s3.amazonaws.com/logo/smalldog_logo.png",
+				url => "https://smalldognet.com/logo.png",
 				},
 			# one or the other of width or height OPTIONAL if you want to scale the PNG
 			# but not both (we don't want to squash things)

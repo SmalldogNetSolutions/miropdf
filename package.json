@@ -1,0 +1,28 @@
+{
+  "name": "miropdf",
+  "version": "0.0.1",
+  "description": "PDFKit powered json ",
+  "author": {
+    "name": "Dylan Scott"
+  },
+  "contributors": [],
+  "homepage": "https://github.com/miroscott/miropdf/",
+  "keywords": [
+    "pdf"
+  ],
+  "engines": {
+    "node": "0.10.2x"
+  },
+  "dependencies": {
+    "PDFKit": "0.6.5",
+    "pngjs": "0.4.0",
+    "request": "~2.42.0",
+    "svgo": "0.4.5"
+  },
+  "scripts": {
+    "test": "perl test/miropdf.pl | lib/miropdf.js"
+  },
+  "main": "./lib/miropdf.js",
+  "readmeFilename": "README.md",
+  "directories": {}
+}
