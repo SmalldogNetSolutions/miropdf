@@ -122,20 +122,43 @@ my $jdata = {
 				# do dont spend much time on this yet)
 			content => {
 				table => {
-					title => 'Activity Detail',
 					width => '100%', # required, either percent or points (i.e. 72 points = 1 inch)
-					thead => {
+					# padding can be either all sides, or left, right, top bottom, just like object
+					# padding above, which maybe should be called margin...na.
+					padding => 2, # default padding on all cells is 2
+					# padding_left => 1,
+					# padding_right => 3,
+					# padding_top => 4,
+					# padding_bottom => 5,
+					align => 'left', # everything (title, thead, and tbody) defaults here
+					font => 'Helvetica', # or default to engine/page
+					font_size => 12, # or default
+					color => '#000', # or default
+					background_color => '#fff', # or default
+					title => { # if title is not defined, there is no title to display
+						content => 'Activity Detail',
+						align => 'left', # or right or center
+						font => 'Helvetica', # or default to engine/page
+						font_size => 12, # or default
+						color => '#000', # or default
+						background_color => '#fff', # or default
+						},
+					thead => { # applies to <th> type cells
+						align => 'left', # default is left text align
 						show => 1, # show the column headers, pulled from column detail below
 						font => 'Helvetica', # or default to engine/page
 						font_size => 12, # or default
 						color => '#000', # or default
 						background_color => '#fff', # or default
+						padding => 1, # override default padding
 					},
-					tbody => {
+					tbody => { # applies to <td> type cells
+						align => 'left', # default is left text align
 						font => 'Helvetica', # or default to engine/page
 						font_size => 12, # or default
 						color => '#000', # or default
 						background_color => '#fff', # or default
+						padding => 1, # override default padding
 					},
 					columns => [
 						# the order of the columns determins how they should be displayed
@@ -153,10 +176,10 @@ my $jdata = {
 					{ 	
 						amount => '100.00',
 						post_date => '2014-01-01 ',
-						accont_name => 'Contributions',
+						account_name => 'Contributions',
 						description => 'Check-Bowels Household',
 						# _opts are where we can override tbody settings in table above
-						# for the entire row or a single key
+						# for the entire row or a single key in that row
 						_opts => {
 							_all => { # means all rows
 								font => 'Helvetica', 
@@ -171,7 +194,7 @@ my $jdata = {
 					},
 					{ 	
 						amount => '-1,200.00',
-						accont_name => 'Distributions',
+						account_name => 'Distributions',
 						post_date => '2014-01-01 ',
 						description => 'Community Resource Center Grant Distributon',
 					},
