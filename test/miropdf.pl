@@ -131,6 +131,7 @@ my $jdata = {
 					# padding_top => 4,
 					# padding_bottom => 5,
 					align => 'left', # everything (title, thead, and tbody) defaults here
+					valign => 'center', # center valign is the default
 					font => 'Helvetica', # or default to engine/page
 					font_size => 12, # or default
 					color => '#000', # or default
@@ -138,6 +139,7 @@ my $jdata = {
 					title => { # if title is not defined, there is no title to display
 						content => 'Activity Detail',
 						align => 'left', # or right or center
+						# valign => not needed because there is only 1 cell
 						font => 'Helvetica', # or default to engine/page
 						font_size => 12, # or default
 						color => '#000', # or default
@@ -145,6 +147,7 @@ my $jdata = {
 						},
 					thead => { # applies to <th> type cells
 						align => 'left', # default is left text align
+						valign => 'top', # or default table
 						show => 1, # show the column headers, pulled from column detail below
 						font => 'Helvetica', # or default to engine/page
 						font_size => 12, # or default
@@ -154,6 +157,7 @@ my $jdata = {
 					},
 					tbody => { # applies to <td> type cells
 						align => 'left', # default is left text align
+						valign => 'bottom', # or default table
 						font => 'Helvetica', # or default to engine/page
 						font_size => 12, # or default
 						color => '#000', # or default
@@ -168,7 +172,11 @@ my $jdata = {
 						{ k => 'description', name => 'Description', width => '60%', },
 						# column options are align, font, font_size, color, background_color to 
 						# override thead defaults
-						{ k => 'amount', name => 'Amount', align => 'right', width => '10%', },
+						{ 	k => 'amount', 
+							name => 'Amount', 
+							align => 'right', 
+							valign => 'top',
+							width => '10%', },
 						],
 					},
 				data => [
@@ -185,10 +193,14 @@ my $jdata = {
 								font => 'Helvetica', 
 								font_size => 12, 
 								color => '#000', 
+								valign => 'top',
+								align => 'left',
 								background_color => '#fff',
 							},
 							amount => { # apply after any _all stuff
 								font_size => 24, 
+								valign => 'bottom',
+								align => 'right',
 							},
 						},
 					},
