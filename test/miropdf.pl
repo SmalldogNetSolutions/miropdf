@@ -99,7 +99,7 @@ my $jdata = {
 				},
 			# one or the other of width or height required
 			# but not both (we don't want to squash things)
-			height => 144, # if just height provided, scale width
+			height => 100, # if just height provided, scale width
 			#width => 144, # if just width provided, scale height
 		},
 		{
@@ -124,6 +124,9 @@ my $jdata = {
 				table => {
 					title => 'Activity Detail',
 					width => '100%', # required, either percent or points (i.e. 72 points = 1 inch)
+					orientation => 'horizontal', # default to vertical
+					data_header_field => 'account_name' # if present, include subheader with value for each field
+					data_header_position => 'top' # top/bottom, left/right, both
 					thead => {
 						show => 1, # show the column headers, pulled from column detail below
 						font => 'Helvetica', # or default to engine/page
@@ -140,12 +143,12 @@ my $jdata = {
 					columns => [
 						# the order of the columns determins how they should be displayed
 						# required fields are k and width (percent of total table width)
-						{ k => 'post_date', name => 'Date', width => '10%', },
+						{ k => 'post_date', name => 'Date', width => '20%', },
 						{ k => 'account_name', name => 'Account', width => '20%', },
-						{ k => 'description', name => 'Description', width => '60%', },
+						{ k => 'description', name => 'Description', width => '40%', },
 						# column options are align, font, font_size, color, background_color to 
 						# override thead defaults
-						{ k => 'amount', name => 'Amount', align => 'right', width => '10%', },
+						{ k => 'amount', name => 'Amount', align => 'right', width => '20%', },
 						],
 					},
 				data => [
