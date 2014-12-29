@@ -135,6 +135,8 @@ my $jdata = {
 					thead => {
 						show => 1, # show the column headers, pulled from column detail below
 						font => 'Helvetica', # or default to engine/page
+						clip => 1, # clip data rows to width, do not autowrap
+						h_width => '10%', # width for horizontal table (optional),
 						font_size => 12, # or default
 						color => '#000', # or default
 						background_color => '#fff', # or default
@@ -148,6 +150,9 @@ my $jdata = {
 					columns => [
 						# the order of the columns determins how they should be displayed
 						# required fields are k and width (percent of total table width)
+						# thead means format data columns using thead attributes
+						# for horizontal tables, width is not relevant (see h_width in thead)
+						# also align is not relevant for now, default to align left for everything
 						{ k => 'post_date', name => 'Date', width => '20%', thead => 1, },
 						{ k => 'account_name', name => 'Account', width => '20%', },
 						{ k => 'description', name => 'Description', width => '40%', },
