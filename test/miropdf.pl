@@ -61,7 +61,6 @@ my $jdata = {
 			border_color => '#000',
 			line_height => 40,
 			align => 'center',
-			#smartwrap => 1,
 			#clear => 1, # start over on far left, bottom of last elements
 			padding => 3, # on all sides
 		},
@@ -84,6 +83,7 @@ my $jdata = {
 		},
 		{
 			object_type => 'text',
+			item_display => 'smartwrap', # this can be span, div or smartwrap, but smartwrap
 			content => 'Text to the right of the vertical line',
 			align => 'left', # text always defaults to left
 		},
