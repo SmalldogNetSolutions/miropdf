@@ -47,7 +47,7 @@
                "width" : "100%",
                "thead" : {
                   "show" : 1,
-                  "h_width" : "10%",
+                  "h_width" : "20%",
                   "font" : "Helvetica-Bold"
                },
                "title" : {
@@ -61,8 +61,69 @@
          "object_type" : "table",
          "clear" : 1
       },
+      {
+         "content" : {
+            "data" : [
+               {
+                  "doner_id" : 9101,
+                  "from_grant_id" : null,
+                  "funit_name" : "Neighbors Care Fund (TR) :: Fiscal Sponsorship",
+                  "advised_donation" : null,
+                  "grant_id" : null,
+                  "account_id" : null,
+                  "advise_doner_name" : null,
+                  "donation_id" : 23391,
+                  "grant_name" : null,
+                  "advise_anonymous" : null,
+                  "vendor_id" : null,
+                  "funit_id" : 1284,
+                  "description" : null,
+                  "amount" : "25.00",
+                  "sship_name" : null,
+                  "created_ts" : "2015-01-05 09:28:15.160159",
+                  "sship_id" : null,
+                  "advise_doner_id" : null,
+                  "grant_fund_id" : null,
+                  "donation_date" : "2015-01-05",
+                  "donation_dest_id" : 23398,
+                  "anonymous" : 1,
+                  "vendor_name" : null,
+                  "doner_name" : "Anonymous"
+               }
+            ],
+            "table" : {
+               "columns" : [
+                  {
+                     "clip" : 1,
+                     "width" : "80%",
+                     "k" : "funit_name",
+                     "name" : "Fund"
+                  },
+                  {
+                     "width" : "20%",
+                     "align" : "right",
+                     "k" : "amount",
+                     "name" : "Amount"
+                  }
+               ],
+               "width" : "100%",
+               "thead" : {
+                  "show" : 1,
+                  "font" : "Helvetica-Bold"
+               },
+               "title" : {
+                  "font_size" : 12,
+                  "content" : "Donation Funds",
+                  "font" : "Helvetica-Bold",
+                  "align" : "left"
+               }
+            }
+         },
+         "object_type" : "table",
+         "clear" : 1
+      }
    ],
-   "output_file" : "./output.pdf",
+   "output_file" : "./donation23391.pdf",
    "page" : {
       "margin_right" : 36,
       "size" : [
