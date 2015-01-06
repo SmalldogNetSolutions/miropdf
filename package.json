@@ -14,7 +14,7 @@
     "node": "0.10.2x"
   },
   "dependencies": {
-    "PDFKit": "0.6.5",
+    "pdfkit": "0.6.5",
     "pngjs": "0.4.0",
     "request": "~2.42.0",
     "svgo": "0.4.5"
