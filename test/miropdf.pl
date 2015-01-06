@@ -16,9 +16,6 @@ my $jdata = {
 	header => { # (optional) 
 		height => 72, # (required) 
 		# width => always page width minus left and right margins
-		# if this is blank it means we want this thing on all pages
-		# otherwise we can specify only on the first, last or both first and last
-		pages => ['first','last'], 
 		items => [
 			# common drawing item stuff see examples in items below
 			],
@@ -26,19 +23,15 @@ my $jdata = {
 	footer => { # (optional)
 		height => 72, # (required)
 		# width => always page width minus left and right margins
-		pages => ['first','last'],
 		items => [],
 		},
 	left_sidebar => { # (optional)
 		width => 72, # (required)
 		#height => always page height minus page top and bottom margins and 
-		# header and footer height if defined
-		pages => ['first','last'], 
 		items => [],
 		},
 	right_sidebar => { # (optional)
 		width => 72, # (required)
-		pages => ['first','last'],
 		#height => always page height minus page top and bottom margins and 
 		# header and footer height if defined
 		items => [],
@@ -48,6 +41,7 @@ my $jdata = {
 		font_size => 12, # engine default should be 12
 		color => '#000', # engine default should be black #000
 		background_color => '#fff', # engine default should be white #fff
+		align => 'left',
 		# what else should we default?
 		},
 	items => [
@@ -67,6 +61,7 @@ my $jdata = {
 			border_color => '#000',
 			line_height => 40,
 			align => 'center',
+			#clear => 1, # start over on far left, bottom of last elements
 			padding => 3, # on all sides
 		},
 		{
@@ -80,6 +75,7 @@ my $jdata = {
 		{
 			object_type => 'vline', # vertical line
 			item_display => 'span', # by default everything acts like a div
+			width => '10%', # width in percent or points
 			line_width => 2,
 			line_length => 100, # (required for vertical line)
 			padding_left => 3,
@@ -87,6 +83,7 @@ my $jdata = {
 		},
 		{
 			object_type => 'text',
+			item_display => 'smartwrap', # this can be span, div or smartwrap, but smartwrap
 			content => 'Text to the right of the vertical line',
 			align => 'left', # text always defaults to left
 		},
@@ -117,19 +114,29 @@ my $jdata = {
 		{
 			# tables 
 			object_type => 'table',
+			font => 'Times', # default style to apply down to the table
+			align => 'left', # default to left
+			valign => 'center', # default to center (only for table cells)
 			item_display => 'div', # by default tables are divs, if item_display is 
 				# span then stuff would float to the right of the table (this might be really hard
 				# do dont spend much time on this yet)
 			content => {
 				table => {
-					title => 'Activity Detail',
+					title => {
+						content => 'Activity Detail',
+						font_size => 14,
+						font => 'Helvetica-Bold',
+						align => 'left', 
+						},
 					width => '100%', # required, either percent or points (i.e. 72 points = 1 inch)
+					cell_padding => 2, # (default), for all cells
+					border => 1, # draw black 1pt border around everything (default 0, no border)
 					orientation => 'horizontal', # default to vertical
-					data_header_field => 'account_name' # if present, include subheader with value for each field
-					data_header_position => 'top' # top/bottom, left/right, both
 					thead => {
 						show => 1, # show the column headers, pulled from column detail below
 						font => 'Helvetica', # or default to engine/page
+						clip => 1, # clip data rows to width, do not autowrap which is the default
+						h_width => '10%', # width for horizontal table (required),
 						font_size => 12, # or default
 						color => '#000', # or default
 						background_color => '#fff', # or default
@@ -143,12 +150,16 @@ my $jdata = {
 					columns => [
 						# the order of the columns determins how they should be displayed
 						# required fields are k and width (percent of total table width)
-						{ k => 'post_date', name => 'Date', width => '20%', },
-						{ k => 'account_name', name => 'Account', width => '20%', },
+						# thead means format data columns using thead attributes
+						# for horizontal tables, width is not relevant (see h_width in thead)
+						# also align is not relevant for now, default to align left for everything
+						# clip here means all the data rows for this column
+						{ k => 'post_date', name => 'Date', width => '20%', thead => 1, },
+						{ k => 'account_name', name => 'Account', width => '20%', clip => 1, },
 						{ k => 'description', name => 'Description', width => '40%', },
 						# column options are align, font, font_size, color, background_color to 
 						# override thead defaults
-						{ k => 'amount', name => 'Amount', align => 'right', width => '20%', },
+						{ k => 'amount', name => 'Amount', align => 'right', width => '20%',},
 						],
 					},
 				data => [
@@ -160,7 +171,7 @@ my $jdata = {
 						description => 'Check-Bowels Household',
 						# _opts are where we can override tbody settings in table above
 						# for the entire row or a single key
-						_opts => {
+						_opts => { # not implemented yet
 							_all => { # means all rows
 								font => 'Helvetica', 
 								font_size => 12, 
