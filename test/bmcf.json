@@ -1,10 +1,11 @@
-{
+{ 
+   "output_file": "./out.pdf",
    "page" : {
       "margin_top" : 36,
       "margin_left" : 36,
       "margin_right" : 36,
-      "layout" : "portrait",
       "margin_bottom" : 36,
+      "layout" : "portrait",
       "size" : [
          612,
          792
@@ -94,6 +95,7 @@
       },
       {
          "object_type" : "text",
+         "padding_top" : 10,
          "content" : "The Foundation strives to serve donors and help them invest in strengthening our local communities through their philanthropy.  With your help, we are able to increase our grant-making capability in support of a more Healthy Community.  This includes grants in the areas of arts, education, basic needs, neighborhoods, health, environment and economy.\r\n\r\nThe Foundation provides many options for charitable giving.  Our staff welcomes questions regarding our giving resources and invites you to call upon us at any time.  You may reach us by phone at (509)529-4371 or by e-mail at bmcf@bluemountainfoundation.org.  You can also learn about us at our website, www.bluemountainfoundation.org. \r\n\r\nSincerely,\r\n\r\n\r\n\r\nKari Isaacson\r\nExecutive Director\r\n\r\nBMCF ID #91-1250104\r\nAll donations are tax-deductible to full extent allowed by law.\r\nNo goods or services were given in return for this donation.\r\nBlue Mountain Community Foundation has exclusive legal control over the contributed assets.\r\n",
          "item_display" : "div"
       }
