@@ -88,18 +88,6 @@ my $jdata = {
 			align => 'left', # text always defaults to left
 		},
 		{
-			object_type => 'svg',
-			content => {
-				# either a local file path or a url is required
-				path => "/tmp/smalldog_logo.svg",
-				#url => "https://smalldognetstatic.s3.amazonaws.com/logo/smalldog_logo.svg",
-				},
-			# one or the other of width or height required
-			# but not both (we don't want to squash things)
-			height => 100, # if just height provided, scale width
-			#width => 144, # if just width provided, scale height
-		},
-		{
 			object_type => 'png',
 			content => {
 				# either a local file path or a url is required
