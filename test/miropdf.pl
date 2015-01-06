@@ -130,6 +130,7 @@ my $jdata = {
 						},
 					width => '100%', # required, either percent or points (i.e. 72 points = 1 inch)
 					cell_padding => 2, # (default), for all cells
+					border => 1, # draw black 1pt border around everything (default 0, no border)
 					orientation => 'horizontal', # default to vertical
 					thead => {
 						show => 1, # show the column headers, pulled from column detail below
