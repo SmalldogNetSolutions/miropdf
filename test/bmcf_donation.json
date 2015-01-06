@@ -1,0 +1,140 @@
+{
+   "items" : [
+      {
+         "content" : "Jim and Jill Sporleder\n959 S.E. Sentry Dr.\nCollege Place, WA 99324\n",
+         "object_type" : "text",
+         "width" : "50%",
+         "font" : "Helvetica-Bold",
+         "item_display" : "span",
+         "padding_top" : 72
+      },
+      {
+         "content" : {
+            "url" : "https://smalldognetstatic.s3.amazonaws.com/bmcf_logo.svg"
+         },
+         "object_type" : "svg",
+         "height" : 100
+      },
+      {
+         "content" : "On behalf of the Board of Trustees of Blue Mountain Community Foundation, thank you for your gift. In recognition of your donation, your name will appear as a donor in our Annual Report.  \r\n\r\n",
+         "object_type" : "text",
+         "width" : "100%",
+         "item_display" : "div",
+         "clear" : 1,
+         "padding_top" : 12
+      },
+      {
+         "content" : {
+            "data" : [
+               {
+                  "description" : null,
+                  "donation_date" : "01/05/2015"
+               }
+            ],
+            "table" : {
+               "columns" : [
+                  {
+                     "k" : "donation_date",
+                     "name" : "Date"
+                  },
+                  {
+                     "k" : "description",
+                     "name" : "Description"
+                  }
+               ],
+               "orientation" : "horizontal",
+               "width" : "100%",
+               "thead" : {
+                  "show" : 1,
+                  "h_width" : "20%",
+                  "font" : "Helvetica-Bold"
+               },
+               "title" : {
+                  "font_size" : 12,
+                  "content" : "Donation 8978",
+                  "font" : "Helvetica-Bold",
+                  "align" : "left"
+               }
+            }
+         },
+         "object_type" : "table",
+         "clear" : 1
+      },
+      {
+         "content" : {
+            "data" : [
+               {
+                  "doner_id" : 3146,
+                  "from_grant_id" : null,
+                  "funit_name" : "Phoenix Scholarship Fund (TR) :: Special Req Scholarship",
+                  "advised_donation" : null,
+                  "grant_id" : null,
+                  "account_id" : null,
+                  "advise_doner_name" : null,
+                  "donation_id" : 8978,
+                  "grant_name" : null,
+                  "advise_anonymous" : null,
+                  "vendor_id" : null,
+                  "funit_id" : 1346,
+                  "description" : null,
+                  "amount" : "10000.00",
+                  "sship_name" : null,
+                  "created_ts" : "2015-01-05 13:23:29.874092",
+                  "sship_id" : null,
+                  "advise_doner_id" : null,
+                  "grant_fund_id" : null,
+                  "donation_date" : "2015-01-05",
+                  "donation_dest_id" : 7980,
+                  "anonymous" : 1,
+                  "vendor_name" : null,
+                  "doner_name" : "Anonymous"
+               }
+            ],
+            "table" : {
+               "columns" : [
+                  {
+                     "clip" : 1,
+                     "width" : "80%",
+                     "k" : "funit_name",
+                     "name" : "Fund"
+                  },
+                  {
+                     "width" : "20%",
+                     "align" : "right",
+                     "k" : "amount",
+                     "name" : "Amount"
+                  }
+               ],
+               "width" : "100%",
+               "thead" : {
+                  "show" : 1,
+                  "font" : "Helvetica-Bold"
+               }
+            }
+         },
+         "object_type" : "table",
+         "clear" : 1
+      },
+      {
+         "content" : "The Foundation strives to serve donors and help them invest in strengthening our local communities through their philanthropy.  With your help, we are able to increase our grant-making capability in support of a more Healthy Community.  This includes grants in the areas of arts, education, basic needs, neighborhoods, health, environment and economy.\r\n\r\nThe Foundation provides many options for charitable giving.  Our staff welcomes questions regarding our giving resources and invites you to call upon us at any time.  You may reach us by phone at (509)529-4371 or by e-mail at bmcf@bluemountainfoundation.org.  You can also learn about us at our website, www.bluemountainfoundation.org. \r\n\r\nSincerely,\r\n\r\n\r\n\r\nKari Isaacson\r\nExecutive Director\r\n\r\nBMCF ID #91-1250104\r\nAll donations are tax-deductible to full extent allowed by law.\r\nNo goods or services were given in return for this donation.\r\nBlue Mountain Community Foundation has exclusive legal control over the contributed assets.\r\n",
+         "object_type" : "text",
+         "item_display" : "div",
+         "padding_top" : 12
+      }
+   ],
+   "output_file" : "/tmp/donation8978.pdf",
+   "default" : {
+      "font_size" : 10
+   },
+   "page" : {
+      "margin_right" : 36,
+      "size" : [
+         612,
+         792
+      ],
+      "margin_left" : 36,
+      "margin_bottom" : 36,
+      "layout" : "portrait",
+      "margin_top" : 36
+   }
+}

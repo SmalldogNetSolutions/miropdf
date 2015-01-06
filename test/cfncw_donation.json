@@ -1,0 +1,140 @@
+{
+   "items" : [
+      {
+         "content" : "Lucille Goodman\n1608 N Western Ave, Unit 2\nWenatchee, WA 98801-8404\n",
+         "object_type" : "text",
+         "width" : "50%",
+         "font" : "Helvetica-Bold",
+         "item_display" : "span",
+         "padding_top" : 72
+      },
+      {
+         "content" : {
+            "url" : "https://smalldognetstatic.s3.amazonaws.com/cfncw_logo.svg"
+         },
+         "object_type" : "svg",
+         "width" : 100
+      },
+      {
+         "content" : "Thank you for your recent gift to the Community Foundation of NCW. Every contribution to your foundation helps to ensure there are resources available to support the communities you care about across North Central Washington. We truly appreciate your generosity and thank you for your investment in your community.  Please retain this receipt for your income tax records.\r\n\r\n\r\nSincerely,\r\n\r\n\r\n\r\n\r\nBeth Stipe\r\nExecutive Director\r\n\r\n",
+         "object_type" : "text",
+         "width" : "100%",
+         "item_display" : "div",
+         "clear" : 1,
+         "padding_top" : 12
+      },
+      {
+         "content" : {
+            "data" : [
+               {
+                  "description" : null,
+                  "donation_date" : "01/05/2015"
+               }
+            ],
+            "table" : {
+               "columns" : [
+                  {
+                     "k" : "donation_date",
+                     "name" : "Date"
+                  },
+                  {
+                     "k" : "description",
+                     "name" : "Description"
+                  }
+               ],
+               "orientation" : "horizontal",
+               "width" : "100%",
+               "thead" : {
+                  "show" : 1,
+                  "h_width" : "20%",
+                  "font" : "Helvetica-Bold"
+               },
+               "title" : {
+                  "font_size" : 12,
+                  "content" : "Donation 23391",
+                  "font" : "Helvetica-Bold",
+                  "align" : "left"
+               }
+            }
+         },
+         "object_type" : "table",
+         "clear" : 1
+      },
+      {
+         "content" : {
+            "data" : [
+               {
+                  "doner_id" : 9101,
+                  "from_grant_id" : null,
+                  "funit_name" : "Neighbors Care Fund (TR) :: Fiscal Sponsorship",
+                  "advised_donation" : null,
+                  "grant_id" : null,
+                  "account_id" : null,
+                  "advise_doner_name" : null,
+                  "donation_id" : 23391,
+                  "grant_name" : null,
+                  "advise_anonymous" : null,
+                  "vendor_id" : null,
+                  "funit_id" : 1284,
+                  "description" : null,
+                  "amount" : "25.00",
+                  "sship_name" : null,
+                  "created_ts" : "2015-01-05 09:28:15.160159",
+                  "sship_id" : null,
+                  "advise_doner_id" : null,
+                  "grant_fund_id" : null,
+                  "donation_date" : "2015-01-05",
+                  "donation_dest_id" : 23398,
+                  "anonymous" : 1,
+                  "vendor_name" : null,
+                  "doner_name" : "Anonymous"
+               }
+            ],
+            "table" : {
+               "columns" : [
+                  {
+                     "clip" : 1,
+                     "width" : "80%",
+                     "k" : "funit_name",
+                     "name" : "Fund"
+                  },
+                  {
+                     "width" : "20%",
+                     "align" : "right",
+                     "k" : "amount",
+                     "name" : "Amount"
+                  }
+               ],
+               "width" : "100%",
+               "thead" : {
+                  "show" : 1,
+                  "font" : "Helvetica-Bold"
+               }
+            }
+         },
+         "object_type" : "table",
+         "clear" : 1
+      },
+      {
+         "content" : "The Community Foundation of North Central Washington has provided no products or services in return for this gift and has exclusive legal control over the contributed assets, including donor advised funds. Donation is fully tax deductible to the extent allowed by the IRS. The Community Foundation's tax identification number is 91-1349486. Registered with Secretary of State, State of Washington, Charities Division. Registration Number GRW-E80-544.",
+         "object_type" : "text",
+         "item_display" : "div",
+         "padding_top" : 12
+      }
+   ],
+   "output_file" : "/tmp/donation23391.pdf",
+   "default" : {
+      "font_size" : 10
+   },
+   "page" : {
+      "margin_right" : 36,
+      "size" : [
+         612,
+         792
+      ],
+      "margin_left" : 36,
+      "margin_bottom" : 36,
+      "layout" : "portrait",
+      "margin_top" : 36
+   }
+}

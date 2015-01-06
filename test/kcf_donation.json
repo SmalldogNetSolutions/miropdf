@@ -1,0 +1,140 @@
+{
+   "items" : [
+      {
+         "content" : "Kenneth Rury\n18091 10th Ave NE\nPoulsbo, WA 98370\n",
+         "object_type" : "text",
+         "width" : "50%",
+         "font" : "Helvetica-Bold",
+         "item_display" : "span",
+         "padding_top" : 72
+      },
+      {
+         "content" : {
+            "url" : "https://smalldognetstatic.s3.amazonaws.com/kcf_logo.svg"
+         },
+         "object_type" : "svg",
+         "height" : 100
+      },
+      {
+         "content" : "On behalf of our community and the Kitsap Community Foundation Board of Directors, I would like to thank you for your recent donation to the Kitsap Community Foundation. Your donation will be placed into the Fund listed below and used for that Fund's purposes.\r\n\r\nYou will see below the amount and designation of your donation. \r\n\r\nThank you again for your generous donation.  Please feel free to contact me at any time if you would like any further information or if I can be of any assistance.\r\n",
+         "object_type" : "text",
+         "width" : "100%",
+         "item_display" : "div",
+         "clear" : 1,
+         "padding_top" : 12
+      },
+      {
+         "content" : {
+            "data" : [
+               {
+                  "description" : null,
+                  "donation_date" : "12/31/2014"
+               }
+            ],
+            "table" : {
+               "columns" : [
+                  {
+                     "k" : "donation_date",
+                     "name" : "Date"
+                  },
+                  {
+                     "k" : "description",
+                     "name" : "Description"
+                  }
+               ],
+               "orientation" : "horizontal",
+               "width" : "100%",
+               "thead" : {
+                  "show" : 1,
+                  "h_width" : "20%",
+                  "font" : "Helvetica-Bold"
+               },
+               "title" : {
+                  "font_size" : 12,
+                  "content" : "Donation 5646",
+                  "font" : "Helvetica-Bold",
+                  "align" : "left"
+               }
+            }
+         },
+         "object_type" : "table",
+         "clear" : 1
+      },
+      {
+         "content" : {
+            "data" : [
+               {
+                  "doner_id" : 3728,
+                  "from_grant_id" : null,
+                  "funit_name" : "Kitsap Cares Real Estate Fund (PR) :: Endowed",
+                  "advised_donation" : null,
+                  "grant_id" : null,
+                  "account_id" : null,
+                  "advise_doner_name" : null,
+                  "donation_id" : 5646,
+                  "grant_name" : null,
+                  "advise_anonymous" : null,
+                  "vendor_id" : null,
+                  "funit_id" : 1110,
+                  "description" : null,
+                  "amount" : "5000.00",
+                  "sship_name" : null,
+                  "created_ts" : "2015-01-02 10:31:30.330839",
+                  "sship_id" : null,
+                  "advise_doner_id" : null,
+                  "grant_fund_id" : null,
+                  "donation_date" : "2014-12-31",
+                  "donation_dest_id" : 5659,
+                  "anonymous" : null,
+                  "vendor_name" : null,
+                  "doner_name" : "Rury, Kenneth"
+               }
+            ],
+            "table" : {
+               "columns" : [
+                  {
+                     "clip" : 1,
+                     "width" : "80%",
+                     "k" : "funit_name",
+                     "name" : "Fund"
+                  },
+                  {
+                     "width" : "20%",
+                     "align" : "right",
+                     "k" : "amount",
+                     "name" : "Amount"
+                  }
+               ],
+               "width" : "100%",
+               "thead" : {
+                  "show" : 1,
+                  "font" : "Helvetica-Bold"
+               }
+            }
+         },
+         "object_type" : "table",
+         "clear" : 1
+      },
+      {
+         "content" : "The Kitsap Community Foundation is a non-profit corporation registered with the Secretary of State and is recognized by the IRS as a 501(c)(3) charitable entity (EIN 94-3205217). No goods or services were received or exchanged for this donation. The Kitsap Community Foundation retains exclusive legal control over the contributed assets.  IRS Form 990, our most recent audit, and our Annual Report are available by contacting the KCF at (360) 698-3622 or P.O. Box 3670, Silverdale, WA 98383.\r\n\r\nThank you again for your donation.\r\nIf you would prefer to receive a hard copy of this receipt, feel free to call 360-698-6043.\r\n\r\nSincerely,\r\n\r\n\r\n\r\nKol Medina\r\nExecutive Director",
+         "object_type" : "text",
+         "item_display" : "div",
+         "padding_top" : 12
+      }
+   ],
+   "output_file" : "/tmp/donation5646.pdf",
+   "default" : {
+      "font_size" : 10
+   },
+   "page" : {
+      "margin_right" : 36,
+      "size" : [
+         612,
+         792
+      ],
+      "margin_left" : 36,
+      "margin_bottom" : 36,
+      "layout" : "portrait",
+      "margin_top" : 36
+   }
+}
