@@ -1,0 +1,101 @@
+{
+   "page" : {
+      "margin_top" : 36,
+      "margin_left" : 36,
+      "margin_right" : 36,
+      "layout" : "portrait",
+      "margin_bottom" : 36,
+      "size" : [
+         612,
+         792
+      ]
+   },
+   "items" : [
+      {
+         "width" : "50%",
+         "object_type" : "text",
+         "padding_top" : 72,
+         "content" : "Jon and Wendye Bren\n739 Clay Street\nWalla Walla, WA 99362\n",
+         "font" : "Helvetica-Bold",
+         "item_display" : "span"
+      },
+      {
+         "object_type" : "png",
+         "content" : {
+            "url" : "https://smalldognetstatic.s3.amazonaws.com/bmcf_logo.png"
+         }
+      },
+      {
+         "object_type" : "text",
+         "content" : "On behalf of the Board of Trustees of Blue Mountain Community Foundation, thank you for your gift. In recognition of your donation, your name will appear as a donor in our Annual Report.  \r\n\r\n",
+         "clear" : 1,
+         "item_display" : "div"
+      },
+      {
+         "object_type" : "table",
+         "content" : {
+            "table" : {
+               "thead" : {
+                  "show" : 1,
+                  "font" : "Helvetica-Bold"
+               },
+               "width" : "100%",
+               "columns" : [
+                  {
+                     "width" : "80%",
+                     "clip" : 1,
+                     "k" : "funit_name",
+                     "name" : "Fund"
+                  },
+                  {
+                     "width" : "20%",
+                     "align" : "right",
+                     "k" : "amount",
+                     "name" : "Amount"
+                  }
+               ],
+               "title" : {
+                  "align" : "left",
+                  "font_size" : 25,
+                  "content" : "Donation Funds",
+                  "font" : "Helvetica-Bold"
+               }
+            },
+            "data" : [
+               {
+                  "donation_dest_id" : "7947",
+                  "advise_doner_name" : null,
+                  "from_grant_id" : null,
+                  "vendor_name" : null,
+                  "grant_id" : null,
+                  "created_ts" : "2014-12-24 09:29:01.490475",
+                  "advised_donation" : null,
+                  "doner_name" : "Bren, Jon",
+                  "donation_id" : "8946",
+                  "doner_id" : "1194",
+                  "grant_name" : null,
+                  "funit_id" : "1318",
+                  "donation_date" : "2014-12-24",
+                  "sship_id" : null,
+                  "sship_name" : null,
+                  "vendor_id" : null,
+                  "funit_name" : "Admin for BMCF Fund (U) :: Discretionary",
+                  "anonymous" : null,
+                  "description" : null,
+                  "account_id" : null,
+                  "amount" : "100.00",
+                  "grant_fund_id" : null,
+                  "advise_doner_id" : null,
+                  "advise_anonymous" : null
+               }
+            ]
+         },
+         "clear" : 1
+      },
+      {
+         "object_type" : "text",
+         "content" : "The Foundation strives to serve donors and help them invest in strengthening our local communities through their philanthropy.  With your help, we are able to increase our grant-making capability in support of a more Healthy Community.  This includes grants in the areas of arts, education, basic needs, neighborhoods, health, environment and economy.\r\n\r\nThe Foundation provides many options for charitable giving.  Our staff welcomes questions regarding our giving resources and invites you to call upon us at any time.  You may reach us by phone at (509)529-4371 or by e-mail at bmcf@bluemountainfoundation.org.  You can also learn about us at our website, www.bluemountainfoundation.org. \r\n\r\nSincerely,\r\n\r\n\r\n\r\nKari Isaacson\r\nExecutive Director\r\n\r\nBMCF ID #91-1250104\r\nAll donations are tax-deductible to full extent allowed by law.\r\nNo goods or services were given in return for this donation.\r\nBlue Mountain Community Foundation has exclusive legal control over the contributed assets.\r\n",
+         "item_display" : "div"
+      }
+   ]
+}
