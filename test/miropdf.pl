@@ -5,6 +5,7 @@ use JSON;
 
 my $jdata = {
 	# all units are in points (72 point per inch)
+	output_file => '/tmp/output.pdf', # (required)
 	page => { # (required)
 		size => [612,792], # 8.5/11 in points
 		layout => 'portrait',
