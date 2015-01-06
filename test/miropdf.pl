@@ -129,14 +129,13 @@ my $jdata = {
 						align => 'left', 
 						},
 					width => '100%', # required, either percent or points (i.e. 72 points = 1 inch)
+					cell_padding => 2, # (default), for all cells
 					orientation => 'horizontal', # default to vertical
-					data_header_field => 'account_name' # if present, include subheader with value for each field
-					data_header_position => 'top' # top/bottom, left/right, both
 					thead => {
 						show => 1, # show the column headers, pulled from column detail below
 						font => 'Helvetica', # or default to engine/page
-						clip => 1, # clip data rows to width, do not autowrap
-						h_width => '10%', # width for horizontal table (optional),
+						clip => 1, # clip data rows to width, do not autowrap which is the default
+						h_width => '10%', # width for horizontal table (required),
 						font_size => 12, # or default
 						color => '#000', # or default
 						background_color => '#fff', # or default
@@ -153,12 +152,13 @@ my $jdata = {
 						# thead means format data columns using thead attributes
 						# for horizontal tables, width is not relevant (see h_width in thead)
 						# also align is not relevant for now, default to align left for everything
+						# clip here means all the data rows for this column
 						{ k => 'post_date', name => 'Date', width => '20%', thead => 1, },
-						{ k => 'account_name', name => 'Account', width => '20%', },
+						{ k => 'account_name', name => 'Account', width => '20%', clip => 1, },
 						{ k => 'description', name => 'Description', width => '40%', },
 						# column options are align, font, font_size, color, background_color to 
 						# override thead defaults
-						{ k => 'amount', name => 'Amount', align => 'right', width => '20%', },
+						{ k => 'amount', name => 'Amount', align => 'right', width => '20%',},
 						],
 					},
 				data => [
@@ -170,7 +170,7 @@ my $jdata = {
 						description => 'Check-Bowels Household',
 						# _opts are where we can override tbody settings in table above
 						# for the entire row or a single key
-						_opts => {
+						_opts => { # not implemented yet
 							_all => { # means all rows
 								font => 'Helvetica', 
 								font_size => 12, 
