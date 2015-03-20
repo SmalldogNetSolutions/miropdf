@@ -89,16 +89,16 @@ my $jdata = {
 			align => 'left', # text always defaults to left
 		},
 		{
-			object_type => 'png',
+			object_type => 'png', # also object_type => 'svg',
 			content => {
 				# either a local file path or a url is required
 				#path => "/tmp/smalldog_logo.png",
 				url => "https://smalldognet.com/logo.png",
 				},
-			# one or the other of width or height OPTIONAL if you want to scale the PNG
-			# but not both (we don't want to squash things)
-			#height => 144, # if just height provided, scale width
-			width => 144, # if just width provided, scale height
+
+			# require both hight and width and then the code will scale to the max to fit inside this
+			max_height => 144, # required
+			max_width => 144, # required
 		},
 		{
 			# tables 
