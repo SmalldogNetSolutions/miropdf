@@ -52,7 +52,7 @@ my $jdata = {
 		{
 			object_type => 'text',
 			item_display => 'div', # (default) by default everything acts like a div
-			content => 'Smalldog Net Solutions',
+			content => 'Smalldog Net Solutions, page #{pagenum}', # special vars in text fields only #{varname} expressions
 			font => 'Helvetica',
 			font_size => 36,
 			color => '#fff',
@@ -93,7 +93,7 @@ my $jdata = {
 			content => {
 				# either a local file path or a url is required
 				#path => "/tmp/smalldog_logo.png",
-				url => "https://smalldognet.com/logo.png",
+				url => "https://smalldognet.com/logo.png", # BEWARE - web images (SVG only, for now) are cached in /tmp
 				},
 
 			# require both hight and width and then the code will scale to the max to fit inside this
