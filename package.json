@@ -1,14 +1,15 @@
 {
   "name": "miropdf",
-  "version": "0.0.1",
-  "description": "PDFKit powered json ",
+  "version": "0.0.10",
+  "description": "PDFKit powered json to pdf templating, very basic, very verbose, very low-level.",
+  "license": "MIT",
   "author": {
     "name": "Dylan Scott"
   },
   "contributors": [],
   "homepage": "https://github.com/miroscott/miropdf/",
   "keywords": [
-    "pdf"
+    "pdf", "json", "template", "pdfkit", "svg"
   ],
   "engines": {
     "node": "0.10.2x"
@@ -24,5 +25,4 @@
   },
   "main": "./lib/miropdf.js",
   "readmeFilename": "README.md",
-  "directories": {}
 }
