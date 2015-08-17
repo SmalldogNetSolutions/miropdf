@@ -24,5 +24,5 @@
     "test": "perl test/miropdf.pl | lib/miropdf.js"
   },
   "main": "./lib/miropdf.js",
-  "readmeFilename": "README.md",
+  "readmeFilename": "README.md"
 }
