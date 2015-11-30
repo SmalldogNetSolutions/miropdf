@@ -90,7 +90,7 @@ start() {
     #
     # Note that redirecting the output to /dev/null (or anywhere) is necessary
     # to make this script work if provisioning the service via Chef.
-    forever \
+    /usr/local/bin/forever \
       --pidFile $PIDFILE \
       -a \
       -l $LOGFILE \
@@ -104,7 +104,7 @@ stop() {
     if [ -f $PIDFILE ]; then
         echo "Shutting down $NAME"
         # Tell Forever to stop the process.
-        forever stop $APPLICATION_PATH 2>&1 > /dev/null
+        /usr/local/bin/forever stop $APPLICATION_PATH 2>&1 > /dev/null
         # Get rid of the pidfile, since Forever won't do that.
         rm -f $PIDFILE
         RETVAL=$?
